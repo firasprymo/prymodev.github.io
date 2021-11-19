@@ -18,6 +18,7 @@ export class QualificationsComponent implements OnInit {
   showQualification(): any {
     const tabs = document.querySelectorAll('[data-target]');
     const tabContents = document.querySelectorAll('[data-content]');
+    console.log(tabs);
     tabs.forEach((tab: any) => {
       const datas = tab.dataset.target;
       tab.addEventListener('click', () => {

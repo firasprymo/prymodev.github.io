@@ -159,20 +159,7 @@ img {
 }
 
 
-/* show menu */
-.show-menu {
-  bottom: 0;
-}
 
-/*Active Link */
-.active-link {
-  color: var(--first-color);
-}
-
-/* Change background header */
-.scroll-header {
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
-}
 
 
 /*======================== BUTTONS========================*/
@@ -225,8 +212,17 @@ img {
   opacity: 1;
   visibility: visible;
 }
+.qualification [data-content] {
+  display: none;
 
+}
+.qualification__active[data-content] {
+  display: block ;
+}
 
+.qualification__button.qualification__active {
+  color: var(--first-color);
+}
 /*========================== SCROLl BAR ==================*/
 ::-webkit-scrollbar {
   width: .60rem;

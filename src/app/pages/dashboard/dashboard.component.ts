@@ -14,7 +14,6 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.scrollActive();
-    this.changeBgHeader();
     this.changeDark();
   }
 
@@ -35,17 +34,6 @@ export class DashboardComponent implements OnInit {
     });
   }
 
-  changeBgHeader() {
-    window.addEventListener('scroll', () => {
-      const nav = document.getElementById('header');
-      // when the scroll is greater than 200 viewport height, add the scroll header class
-      if (scrollY >= 80) {
-        nav.classList.add('scroll-header');
-      } else {
-        nav.classList.remove('scroll-header');
-      }
-    });
-  }
 
   changeDark() {
     const themeButton = document.getElementById('theme-button');
@@ -72,5 +60,8 @@ export class DashboardComponent implements OnInit {
       localStorage.setItem('selected-theme', getCurrentTheme());
       localStorage.setItem('selected-icon', getCurrentIcon());
     });
+  }
+  scrollUp(){
+    window.scrollTo(0, 0);
   }
 }
