@@ -13,6 +13,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.onClick();
     this.gotLink();
+    this.changeBgHeader();
+
   }
 
   onClick(): any {
@@ -20,12 +22,10 @@ export class HeaderComponent implements OnInit {
     const navMenu = document.getElementById('nav-menu');
     const navToggle = document.getElementById('nav-toggle');
     const navClose = document.getElementById('nav-close');
-
     /*=================== MENu SHOW ==================*/
     /* Validate if contant exist*/
     if (navToggle) {
       navToggle.addEventListener('click', () => {
-        console.log(navMenu);
         navMenu.classList.add('show-menu');
       });
     }
@@ -48,6 +48,17 @@ export class HeaderComponent implements OnInit {
       // When we click on each nav__link, we remove the show-menu class
       navMenu.classList.remove('show-menu');
     }));
+  }
+  changeBgHeader() {
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('header');
+      // when the scroll is greater than 200 viewport height, add the scroll header class
+      if (scrollY >= 80) {
+        nav.classList.add('scroll-header');
+      } else {
+        nav.classList.remove('scroll-header');
+      }
+    });
   }
 
 }
