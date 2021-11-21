@@ -84,6 +84,7 @@
 .home_scroll-arrow {
   font-size: 1.25rem;
 }
+
 @media screen and (max-width: 350px) {
 
   .home__content {
@@ -94,6 +95,7 @@
     width: 180px;
   }
 }
+
 @media screen and (min-width: 568px) {
   .home__content {
     grid-template-columns: max-content 1fr 1fr;
@@ -133,4 +135,14 @@
     margin-left: 3rem;
   }
 
+}
+
+@media screen and (min-width: 1024px) {
+  .home__blob {
+    width: 320px;
+  }
+
+  .home__social {
+    transform: translateX(-6rem);
+  }
 }
