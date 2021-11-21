@@ -41,6 +41,7 @@
 
 .home__title {
   font-size: var(--big-font-size);
+  white-space: nowrap;
 }
 
 .home__subtitle {
@@ -122,12 +123,10 @@
 
   .home__blob {
     width: 270px;
-
   }
 
-  .home_scroll {
+  .home__scroll {
     display: block;
-
   }
 
   .home__scroll-button {
