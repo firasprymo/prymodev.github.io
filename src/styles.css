@@ -138,7 +138,7 @@ img {
 
 /*============= LAYOUT =============*/
 .container {
-  max-width: 768px;
+  max-width: 1024px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -157,9 +157,6 @@ img {
   background-color: var(--body-color);
 
 }
-
-
-
 
 
 /*======================== BUTTONS========================*/
@@ -212,17 +209,20 @@ img {
   opacity: 1;
   visibility: visible;
 }
+
 .qualification [data-content] {
   display: none;
 
 }
+
 .qualification__active[data-content] {
-  display: block ;
+  display: block;
 }
 
 .qualification__button.qualification__active {
   color: var(--first-color);
 }
+
 /*========================== SCROLl BAR ==================*/
 ::-webkit-scrollbar {
   width: .60rem;
@@ -276,7 +276,7 @@ img {
 
   .header,
   .main,
-  .footer {
+  .footer__container {
     padding: 0 1rem;
   }
 
@@ -285,7 +285,11 @@ img {
 
 /* For large devices */
 
+@media screen and (min-width: 1024px) {
+  .header,
+  .main,
+  .footer__container {
+    padding: 0;
+  }
 
-
-
-
+}
