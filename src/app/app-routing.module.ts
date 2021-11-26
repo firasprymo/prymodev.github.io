@@ -8,6 +8,11 @@ const routes: Routes = [
       .then(m => m.DashboardModule),
   },
   {
+    path: 'admin',
+    loadChildren: () => import('./pages/admin/admin.module')
+      .then(m => m.AdminModule),
+  },
+  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',
