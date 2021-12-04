@@ -52,7 +52,7 @@ export class HeaderComponent implements OnInit {
   changeBgHeader() {
     window.addEventListener('scroll', () => {
       const nav = document.getElementById('header');
-      // when the scroll is greater than 200 viewport height, add the scroll header class
+      // when the scroll is greater than 200 viewport height, add the scroll header-admin class
       if (scrollY >= 80) {
         nav.classList.add('scroll-header');
       } else {

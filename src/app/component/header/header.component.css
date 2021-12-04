@@ -72,7 +72,7 @@
 .active-link {
   color: var(--first-color);
 }
-/*!* Change background header *!*/
+/*!* Change background header-admin *!*/
 .scroll-header {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 }

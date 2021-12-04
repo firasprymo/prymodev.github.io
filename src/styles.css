@@ -6,7 +6,7 @@
   --header-height: 3rem;
   /*=============================COLORS===================*/
   /*change favorite color */
-  --hue-color: 274; /* purple 250 - Green 142 - Blue 230 - Pink 340 */
+  --hue-color: 227; /* purple 250 - Green 142 - Blue 230 - Pink 340 */
   /*HSL color mode*/
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -48,6 +48,12 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+  /*============================== Admin ===============*/
+  --blue: #287bff;
+  --white: #fff;
+  --grey: 5 f5f5f;
+  --black: #222;
+  --black-second: #999;
 }
 
 /* font size for large devices*/
@@ -96,6 +102,8 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -142,7 +150,10 @@ img {
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
-
+.containerAdmin{
+  position: relative;
+  width: 100%;
+}
 .grid {
   display: grid;
   gap: 1.5rem;
