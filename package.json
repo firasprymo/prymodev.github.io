@@ -7,6 +7,7 @@
     "start-prod": "docker run --rm --name ui -e NODE_ENV=prod -d -p 80:80 ui:latest",
     "setup-windows": "echo. >> C:\\Windows\\System32\\drivers\\etc\\hosts && echo 127.0.0.1 locals.ui.com >> C:\\Windows\\System32\\drivers\\etc\\hosts",
     "build": "ng build",
+    "serve": "ng serve -o --port=4500",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

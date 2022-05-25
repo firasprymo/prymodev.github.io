@@ -1,4 +1,4 @@
-/*!*=============== NAV =====================*!*/
+/*=============== NAV =====================*/
 .nav {
   max-width: 968px;
   height: var(--header-height);
@@ -6,25 +6,32 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .nav__logo,
 .nav__toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
+
 .nav__logo:hover {
   color: var(--first-color);
 }
+
 .nav__toggle {
   font-size: 1.1rem;
   cursor: pointer;
 }
+
 .nav__toggle:hover {
   color: var(--first-color);
 }
+
+
 .nav__list {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+
 .nav__link {
   display: flex;
   flex-direction: column;
@@ -33,12 +40,15 @@
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
+
 .nav__link:hover {
   color: var(--first-color);
 }
+
 .nav__icon {
   font-size: 1.2rem;
 }
+
 .nav__close {
   position: absolute;
   right: 1.3rem;
@@ -47,43 +57,39 @@
   cursor: pointer;
   color: var(--first-color);
 }
+
 .nav__close:hover {
   color: var(--first-color-alt);
 }
-/* show menu */
-.show-menu {
-  bottom: 0 !important;
-}
-/*!*======================= Button Dark/light ====================*!*/
+
+/*======================= Button Dark/light ====================*/
 .nav__btns {
   display: flex;
   align-items: center;
 }
+
 .change-theme {
   font-size: 1.25rem;
   color: var(--title-color);
   margin-right: var(--mb-1);
   cursor: pointer;
 }
+
 .change-theme:hover {
   color: var(--first-color);
 }
-/*!*Active Link *!*/
-.active-link {
-  color: var(--first-color);
-}
-/*!* Change background header-admin *!*/
-.scroll-header {
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
-}
+
 @media screen and (max-width: 350px) {
+
   .nav__menu {
     padding: 2rem .25rem 4rem;
   }
+
   .nav__list {
     column-gap: 0;
   }
 }
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;

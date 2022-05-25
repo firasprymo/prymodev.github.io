@@ -6,7 +6,7 @@
   --header-height: 3rem;
   /*=============================COLORS===================*/
   /*change favorite color */
-  --hue-color: 227; /* purple 250 - Green 142 - Blue 230 - Pink 340 */
+  --hue-color: 250; /* purple 250 - Green 142 - Blue 230 - Pink 340 */
   /*HSL color mode*/
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -48,12 +48,6 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
-  /*============================== Admin ===============*/
-  --blue: #287bff;
-  --white: #fff;
-  --grey: 5 f5f5f;
-  --black: #222;
-  --black-second: #999;
 }
 
 /* font size for large devices*/
@@ -102,8 +96,6 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  min-height: 100vh;
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -146,14 +138,11 @@ img {
 
 /*============= LAYOUT =============*/
 .container {
-  max-width: 1024px;
+  max-width: 768px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
-.containerAdmin{
-  position: relative;
-  width: 100%;
-}
+
 .grid {
   display: grid;
   gap: 1.5rem;
@@ -167,6 +156,22 @@ img {
   z-index: var(--z-fixed);
   background-color: var(--body-color);
 
+}
+
+
+/* show menu */
+.show-menu {
+  bottom: 0;
+}
+
+/*Active Link */
+.active-link {
+  color: var(--first-color);
+}
+
+/* Change background header */
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 }
 
 
@@ -221,18 +226,6 @@ img {
   visibility: visible;
 }
 
-.qualification [data-content] {
-  display: none;
-
-}
-
-.qualification__active[data-content] {
-  display: block;
-}
-
-.qualification__button.qualification__active {
-  color: var(--first-color);
-}
 
 /*========================== SCROLl BAR ==================*/
 ::-webkit-scrollbar {
@@ -287,7 +280,7 @@ img {
 
   .header,
   .main,
-  .footer__container {
+  .footer {
     padding: 0 1rem;
   }
 
@@ -296,11 +289,7 @@ img {
 
 /* For large devices */
 
-@media screen and (min-width: 1024px) {
-  .header,
-  .main,
-  .footer__container {
-    padding: 0;
-  }
 
-}
+
+
+

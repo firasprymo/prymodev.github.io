@@ -23,7 +23,7 @@
 }
 
 .project__img {
-  width: 432px;
+  width: 232px;
   justify-self: center;
 }
 
@@ -36,27 +36,5 @@
 @media screen and (min-width: 568px) {
   .project__container {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .project {
-    text-align: initial;
-  }
-
-  .project__bg {
-    background: none;
-  }
-
-  .project__container {
-    background-color: var(--first-color-second);
-    border-radius: 1rem;
-    padding: 3rem 0 0 2.5rem;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
-  }
-
-  .project__data {
-    padding-top: .8rem;
   }
 }
